@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Writer",
+  "version": "1.0",
+  "description": "the writer",
+  "content_scripts": [
+    {
+      "matches": ["https://at4.typewriter.at/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["logo_no_frame.svg"],
+      "matches": ["https://at4.typewriter.at/*"]
+    }
+  ]
+}
